@@ -13,7 +13,7 @@
   (response "Status Monitor Dashboard")
 
 (defroutes status-monitor
-  (GET "/" [] {:status 200 :body "Status Monitor Dashboard"})
+  (GET "/" [] dashboard})
   (GET "/request-dump" [] handle-dump))
 
 (defonce app-server-instance (atom nil))
